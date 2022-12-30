@@ -20,8 +20,8 @@ body {
 }
 
 .Weather ul {
-  margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .Weather li {
@@ -29,6 +29,7 @@ body {
   line-height: 1.5;
   list-style: none;
   text-align: center;
+  margin-bottom: 3px;
 }
 
 .Weather .temperature {

@@ -17,7 +17,7 @@ export default function Weather(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      weatherIcon: response.data.weather[0].icon,
+      icon: response.data.weather[0].icon,
       coordinates: response.data.coord,
     })
   }
@@ -57,7 +57,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-100 button"
               />
             </div>
           </div>

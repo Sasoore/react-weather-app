@@ -7,7 +7,15 @@ function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Tehran" />
-        <footer>Coded by Sara</footer>
+        <footer>
+          Coded by Sara and is{' '}
+          <a
+            href="https://github.com/Sasoore/react-weather-app"
+            target="_blank"
+          >
+            open-sourced on Github
+          </a>
+        </footer>
       </div>
     </div>
   )

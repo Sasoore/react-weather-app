@@ -3,36 +3,84 @@ body {
 }
 
 .Weather {
-  border-radius: 5px;
-  border: 2px solid #99bda6;
+  border-radius: 10px;
+  border: 15px solid #99bda6;
   padding: 15px;
   max-width: 600px;
-  margin: 25px auto;
+  margin: 25px auto 5px auto;
 }
 
 .Weather form {
-  margin-top: 5px;
+  margin-top: 45px;
 }
 
 .Weather h1 {
   line-height: 1.5;
-  font-size: 45px;
+  font-size: 55px;
+  margin: 0;
+  font-weight: 350;
 }
 
 .Weather ul {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .Weather li {
-  font-size: 18px;
   line-height: 1.5;
   list-style: none;
-  text-align: center;
   margin-bottom: 3px;
 }
 
 .Weather .temperature {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 70px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 450;
+}
+
+.Weather .description {
+  text-align: center;
+}
+
+.Weather .HumidityWind {
+  opacity: 0.8;
+  font-size: 17px;
+  text-align: left;
+  position: relative;
+  top: 33px;
+  left: 35px;
+  line-height: 1.5;
+}
+
+.Weather .button {
+  background-color: #70a182;
+  border: none;
+}
+
+.WeatherTemperature {
+  text-align: center;
+  position: relative;
+  bottom: 83px;
+  left: 25px;
+  margin: 0;
+}
+.Weather .iconW {
+  position: relative;
+  left: 25px;
+  top: 18px;
+  margin: 0;
+}
+
+.WeatherTemperature .unit {
+  position: relative;
+  bottom: 32px;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1;
+}
+
+.Weather canvas {
+  margin: 10px auto;
 }

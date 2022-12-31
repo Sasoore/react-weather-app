@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import './Weather.css'
 import WeatherInfo from './WeatherInfo'
+import WeatherForecast from './WeatherForecast.js'
 
 export default function Weather(props) {
   const [weatherData, setData] = useState({ ready: false })
@@ -17,6 +18,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       weatherIcon: response.data.weather[0].icon,
+      coordinates: response.data.coord,
     })
   }
 
@@ -39,6 +41,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
